@@ -38,31 +38,31 @@
                 <div class="contact__form">
                     <h3>Contactanos</h3>
                     <form action="">
-                        <p>
-                            <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" autocomplete="name" required>
-                        </p>
-                        <p>
-                            <label for="email">Correo electronico</label>
-                            <input type="email" name="email" id="email" autocomplete="email" required>
-                        </p>
-                        <p>
-                            <label for="tel">Telefono</label>
-                            <input type="tel" name="tel" id="tel" autocomplete="tel" required>
-                        </p>
-                        <p>
-                            <label for="asunto">Asunto</label>
-                            <input type="text" name="asutno" id="asunto" required>
-                        </p>
-                        <p class="block">
-                            <label for="message">Mensaje</label>
-                            <textarea name="message" id="message" cols="30" rows="2"></textarea>
-                        </p>
-                        <p class="block">
+                        <div class="label__box">
+                            <input class="input__box" type="text" name="name" id="name" placeholder=" " autocomplete="name" required>
+                            <label class="label-box" class="" for="name">Nombre</label>
+                        </div>
+                        <div class="label__box">
+                            <input class="input__box" type="email" name="email" id="email" placeholder=" " autocomplete="email" required>
+                            <label class="label-box" for="email">Correo electronico</label>
+                        </div>
+                        <div class="label__box">
+                            <input class="input__box" type="tel" name="tel" id="tel" placeholder=" " autocomplete="tel" required>
+                            <label class="label-box" for="tel">Telefono</label>
+                        </div>
+                        <div class="label__box">
+                            <input class="input__box" type="text" name="asutno" id="asunto" placeholder=" " required>
+                            <label class="label-box" for="asunto">Asunto</label>
+                        </div>
+                        <div class="block label__box">
+                            <textarea class="input__box" name="message" id="message" placeholder=" " cols="30" rows="2"></textarea>
+                            <label class="label-box" for="message">Mensaje</label>
+                        </div>
+                        <div class="block">
                             <button type="submit">
                                 Enviar
                             </button>
-                        </p>
+                        </div>
                     </form>
                 </div>
                 <div class="contact__info">

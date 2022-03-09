@@ -189,7 +189,48 @@ a{
 /* Final del footer */
 
 
+/* animation */
+.main__article_content_1{
+    animation-name: mariposa1;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes mariposa1 {
+    0%{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main__article__content_2{
+    animation-name: mariposa2;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mariposa2 {
+    0%{
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 
 

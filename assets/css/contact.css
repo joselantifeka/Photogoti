@@ -121,7 +121,6 @@ a{
     text-transform: uppercase;
     margin: 2.6rem auto;
     font-size: 5rem;
-    letter-spacing:.1em;
 }
 
 .main__tittle:hover{
@@ -144,7 +143,7 @@ a{
     background-color: rgb(41, 40, 40);
 }
 
-.contact__form form p{
+.contact__form form div{
     margin: 0;
     padding: 2.2rem;
 }
@@ -152,6 +151,10 @@ a{
 .contact__form form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__form h3{
+    padding: 0 0 1rem 0;
 }
 
 .contact__form form .block{
@@ -205,10 +208,97 @@ a{
     list-style: none;
 }
 
+.label__box{
+    position: relative;
+}
+
+.label-box{
+    position: absolute;
+
+    top: 0;
+    left: 2rem;
+    transform: translateY(2.5rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.input__box:focus + .label-box,
+.input__box:not(:placeholder-shown) + .label-box {
+    transform: translateY(0) ;
+    transform-origin: left top;
+}
+
 /* fin del main */
 
 
+/* animacion */
+    /* header */
+header{
+    animation-name: cabeza;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes cabeza {
+    0%{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+    /* caida */
+.contact__container{
+    animation-name: caida;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes caida {
+    0%{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+    /* titulos */
+.main__tittle{
+    animation-name: titulo;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes titulo{
+    0%{
+        letter-spacing: 5rem;
+        opacity: 0;
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        letter-spacing: inherit;
+        opacity: 1;
+    }
+}
+    /* interno */
+.contact__form div label{
+    transform: tra;
+}
 
 /* 
 @media(max-width:800px){
