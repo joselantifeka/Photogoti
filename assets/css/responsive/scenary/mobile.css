@@ -1,0 +1,28 @@
+html{
+    background-position: center;
+    }
+    
+    /* hedear */
+
+.body__header{
+    width: 100%;
+    }
+.header__nav-ul li{
+    margin-right: 1em;
+}
+.header__nav-ul a{
+    font-size: 1.8em;
+    padding: 0.2em;
+    }
+
+.header__nav-ul a span{
+    display: none;
+    }
+    /* main */
+
+
+
+    /* footer */
+.footer_content{
+    font-size: 1.8rem;
+}

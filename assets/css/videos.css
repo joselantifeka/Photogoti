@@ -1,0 +1,274 @@
+
+
+/* variables */
+
+:root {
+    --principal: rgba(0, 0, 0, 0.6);
+    --secondary: #fff;
+    --third: #ffd25f;
+    --background-white:rgba(255, 255, 255, 0.2);
+}
+
+/* normalize */
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+html{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../image/img_index/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+}   
+
+/* Helpers */
+
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1080px ;
+    margin: 0 auto;
+}
+
+/* Helpers content */
+
+.content{
+    max-height: 650px;
+    height: 50vh;
+
+    border: solid 0.1px rgb(95, 95, 95);
+    border-radius: 2%;
+    overflow:hidden;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+}
+
+.content__p{
+    width: 100%;
+    height: 23%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    font-size: 1.8rem;
+    padding: 0.5em;
+}
+
+video{
+    width: 100%;
+    height: 80%;
+}
+
+/* Inicio del header */
+
+.body__header{
+    height: 11vh;
+    width: 100%;
+    background: var(--background-white);
+}
+
+
+.header__nav-ul{
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-ul a{
+    color: var(--secondary);
+    font-size: 2rem;
+    padding:  0 3em;
+    text-transform:uppercase;
+    transition: all .3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__nav-ul span{
+    opacity: 0;
+    font-size: .5em;
+}
+
+.header__nav-ul a:hover{
+    font-size: 2.3rem;
+}
+
+.header__nav-ul li:hover span {
+    opacity: 1;
+    color: var(--third);
+}
+/* final del header */
+
+
+
+/* inicio del main */
+
+.body__main{
+    height: auto;
+    margin: 3.5rem auto;
+}
+
+.main__section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: center;
+
+    height: auto;
+    margin: 1rem 1rem;
+}
+
+
+    /* inicio del primer video */
+
+    /* final del primer video */
+
+
+
+    /* inicio del segundo video */
+
+    /* final del segundo video */
+
+
+
+    /* inicio del tercer video */
+
+    /* final del tercer video */
+
+
+
+    /* inicio del cuarto video */
+
+    /* final del cuarto video */
+
+
+/* final del main */
+
+
+
+/* inicio del footer */
+
+.body__footer{
+    width: 100%;
+    height: 8vh;
+    background: var(--background-white);
+    font-size: 2em;
+}
+.footer_content{
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer_content > *{
+    margin: 0 1rem;
+}
+
+.here{
+    text-align: center;
+}
+
+.here__link{
+    text-decoration:line-through;
+    text-decoration-color: var(--third);
+}
+
+.footer_content span{
+    opacity: 1;
+    font-size: .5em;
+    color: var(--third);
+}
+
+.footer_content a:hover{
+    text-decoration: none;
+}
+/* fin del footer */
+
+
+
+/* 
+@media (max-width:799px){
+html{
+    background-position: center;
+    } */
+    
+    /* hedear */
+
+/* .body__header{
+    width: 100%;
+    }
+.header__nav-ul li{
+    margin-right: 1em;
+}
+.header__nav-ul a{
+    font-size: 1.8em;
+    padding: 0.2em;
+    }
+
+.header__nav-ul a span{
+    display: none;
+    } */
+
+    /* main */
+/* .main__section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+    font-size: 1.8rem;
+    }
+
+.content{
+    max-width: none;
+    height: 70vh;
+}
+.content__p{
+    min-width: none;
+    width: auto;
+    height: 23%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.body__footer{
+    font-size: 1.8rem;
+}
+} */
