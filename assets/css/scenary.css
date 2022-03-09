@@ -206,7 +206,26 @@ a{
 }
 /* fin del footer */
 
-
+/* animacion */
+    /* header */
+    header{
+        animation-name: cabeza;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes cabeza {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
 
 /* 
 @media (max-width:799px){

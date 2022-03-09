@@ -246,6 +246,30 @@ a{
 }
 /* fin del footer */
 
+/* animacion */
+    /* header */
+    header,
+    .main__content,
+    .footer_content{
+        animation-name: principal;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes principal {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    /* main */
 
 /* @media (max-width:799px){
     html{
