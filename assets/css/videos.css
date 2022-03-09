@@ -98,7 +98,6 @@ video{
     background: var(--background-white);
 }
 
-
 .header__nav-ul{
     justify-content: center;
     align-items: center;
@@ -107,7 +106,7 @@ video{
 .header__nav-ul a{
     color: var(--secondary);
     font-size: 2rem;
-    padding:  0 3em;
+    padding:  0 2em;
     text-transform:uppercase;
     transition: all .3s ease-in-out;
 
@@ -119,15 +118,16 @@ video{
 .header__nav-ul span{
     opacity: 0;
     font-size: .5em;
+    color: var(--third);
 }
 
 .header__nav-ul a:hover{
     font-size: 2.3rem;
 }
 
-.header__nav-ul li:hover span {
+.header__nav-ul li:hover span,
+.here__link span {
     opacity: 1;
-    color: var(--third);
 }
 /* final del header */
 
