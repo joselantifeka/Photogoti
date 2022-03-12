@@ -39,7 +39,14 @@ a{
     text-decoration: none;
     color: var(--secondary);
     display: inline-block;
-}   
+}  
+
+body{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color:  inherit;
+}
 
 /* Helpers */
 
@@ -52,7 +59,7 @@ a{
     flex-direction: column;
 }
 
-.container{
+.contenedor{
     max-width: 1080px ;
     margin: 0 auto;
 }
@@ -96,6 +103,7 @@ video{
     height: 11vh;
     width: 100%;
     background: var(--background-white);
+    margin-top: 1rem;
 }
 
 .header__nav-ul{
@@ -177,8 +185,22 @@ video{
 
 /* final del main */
 
+/* bootstrap custom */
+.button-bts{
+    padding: 1.6rem;
 
+    margin: 2rem 0 1rem 2rem;
+}
 
+.button-content{
+    padding: 1.4rem;
+    margin: 2rem 0 1rem 2rem;
+    font-size: 1.8rem;
+}
+.button-content a{
+    padding: 1rem;
+    text-decoration: underline;
+}
 /* inicio del footer */
 
 .body__footer{
