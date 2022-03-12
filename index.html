@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHOTOGOTI - HOME</title>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap-5.1.3-dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- LINK CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- GOOGLE FONTS -->
@@ -24,7 +27,7 @@
     <header id="body__header"> 
     </header>
     <main>
-        <section class="container flex-grid ">
+        <section class="contenedor flex-grid ">
             <article class="main__article_content_1 flex-row">
                 <picture class="content__logo flex-row">
                     <img class="content__logo-img" src="./assets/image/img_index/logo.png" alt="" >
@@ -42,11 +45,70 @@
                 <div class="content flex-column">                   
                     <h1 class="content__title text">PHOTOGOTI</h1>
                     <p  class="content__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt ad error facere nemo corporis ullam temporibus. Ullam omnis, nisi molestias eaque assumenda itaque asperiores libero dicta laborum aliquid ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                
+                    <br>
+                    <!-- boton bootstrap -->
+                    <a class="btn btn-danger w-25 bg-transparent rounded-pill border border-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="font-size: 1.6rem;">
+                        Start!
+                      </a>
+                      <!-- despliegue  -->
+                      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title h2 text " id="offcanvasExampleLabel">PHOTOGOTI</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            <p class="text fontsizee">Empieza esta gran aventura!, Selecciona a donde ir!.</p>
+                            <br>
+                          </div>
+                          <div class="container">
+                            <div class="row gap-5">
+                              <div class="col">
+                                <div class="card bg-light p-2" style="width: 30rem;">
+                                  <div class="card-body d-flex justify-content-center flex-column">
+                                    <h5 class="card-title text-center fw-bold fontsizee">Fotografias</h5>
+                                    <p class="card-text fontsizee">Echa le un vistaso a las fotografias mas curiosas de la humanidad!</p>
+                                    <a href="./assets/pages/photographs.html" class="btn btn-dark rounded-pill border border-dark fontsizee">ir a fotografias</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card bg-light p-2" style="width: 30rem;">
+                                  <div class="card-body d-flex justify-content-center flex-column">
+                                    <h5 class="card-title text-center fw-bold fontsizee">Pasiajes</h5>
+                                    <p class="card-text fontsizee">La naturaleza de la tierra es hermosa!, Mira alguna de las fotos mas increibles de la naturaleza.</p>
+                                    <a href="./assets/pages/scenery.html" class="btn btn-dark rounded-pill border border-dark fontsizee">Ir a Paisajes</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card bg-light p-2" style="width: 30rem;">
+                                  <div class="card-body d-flex justify-content-center flex-column">
+                                    <h5 class="card-title text-center fw-bold fontsizee">Videos</h5>
+                                    <p class="card-text fontsizee">Mira los videos mas impresionantes de la actualidad!</p>
+                                    <a href="./assets/pages/videos.html" class="btn btn-dark rounded-pill border border-dark fontsizee">Ir a Videos</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card bg-light p-2" style="width: 30rem;">
+                                  <div class="card-body d-flex justify-content-center flex-column">
+                                    <h5 class="card-title text-center fw-bold fontsizee">Contacto</h5>
+                                    <p class="card-text fontsizee">Quieres comunicarte con nosotros?, no lo dudes y hazlo!.</p>
+                                    <a href="./assets/pages/contact.html" class="btn btn-dark rounded-pill border border-dark fontsizee">Ir a Contacto</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </article>
         </section>
     </main>
     <footer id="body__footer">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -25,13 +25,13 @@ display: none;
 }
 
 
-.contact__container{
+.contact__contenedor{
     display: grid;
     grid-template-columns: 1fr ;
     margin: 0 2rem;
 }
 
-.contact__container > *{
+.contact__contenedor > *{
     padding: 2rem .5rem;
 }
 

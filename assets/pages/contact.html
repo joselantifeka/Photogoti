@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHOTOGOTI - CONTACT</title>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap-5.1.3-dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../css/contact.css">
     <!-- GOOGLE FONTS -->
@@ -23,9 +26,8 @@
     <link rel="manifest" href="../image/img_index/favicon_io/site.webmanifest">
 </head>
 <body>
-    <header id="body__header">
         <header class="body__header flex-row">
-            <nav class="header__nav flex-row container">
+            <nav class="header__nav flex-row contenedor">
                 <ul class="header__nav-ul flex-row ">
                     <li><a href="../../index.html" class="">inicio<span>click para ir!</span></a></li>
                     <li><a href="./photographs.html" class="">fotos<span>click para ir!</span></a></li>
@@ -35,11 +37,10 @@
                 </ul>
             </nav> 
         </header> 
-    </header>
     <main id="body__main">
-        <section class="main__content container">
-                <h1 class="main__tittle">contacto</h1>
-            <div class="contact__container">
+        <section class="main__content contenedor">
+                <h1 class="main__tittle fw-bold">contacto</h1>
+            <div class="contact__contenedor">
                 <div class="contact__form">
                     <h3>Contactanos</h3>
                     <form action="">
@@ -65,8 +66,11 @@
                         </div>
                         <div class="block">
                             <button type="submit">
-                                Enviar
+                                Enviar <span class="bolaa spinner-border spinner-border-sm" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                  </span>
                             </button>
+                            
                         </div>
                     </form>
                 </div>
@@ -89,5 +93,7 @@
     <footer>
        
     </footer>
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 /* variables */
 
 :root {
-    --principal: rgba(0, 0, 0, 0.6);
+    --principal: rgba(0, 0, 0, 0.5);
     --secondary: #fff;
     --third: #ffd25f;
 }
@@ -19,7 +19,7 @@
 
 /* Globals */
 html{
-    background: url(../image/img_index/fondo.jpg);
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url(../image/img_index/fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,6 +38,13 @@ a{
     display: inline-block;
 }   
 
+body{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color:  inherit;
+}
+
 /* Helpers */
 .flex-grid{
     display: grid;
@@ -51,12 +58,14 @@ a{
     flex-direction: column;
 }
 
-
+.fontsizee{
+    font-size: 1.6rem;
+}
 
 
 /* inicio del main */
 
-.container{
+.contenedor{
     grid-template-columns: 1fr 1fr;
 }
 
@@ -168,7 +177,7 @@ a{
     font-size: 2.5em;
 }
 .content{
-    padding: 15% 10rem 0 10rem;
+    padding: 15% 10rem 0 10rem; 
    
   
     

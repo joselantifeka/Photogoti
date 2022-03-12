@@ -5,7 +5,7 @@
     --principal: rgba(0, 0, 0, 0.6);
     --secondary: #fff;
     --third: #ffd25f;
-    --background-white:rgba(255, 255, 255, 0.2);
+    --background-white:rgba(255, 255, 255, 0);
 }
 
 /* normalize */
@@ -20,7 +20,7 @@
 
 /* Globals */
 html{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../image/img_index/fondo.jpg);
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url(../image/img_index/fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,10 +34,18 @@ ul{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none ;
     color: var(--secondary);
     display: inline-block;
 }   
+
+body{
+    font-family: inherit ;
+    font-size: inherit;
+    line-height: inherit;
+    background-color:  inherit;
+}
+
 
 /* Helpers */
 
@@ -50,17 +58,17 @@ a{
     flex-direction: column;
 }
 
-.container{
+.contenedor{
     max-width: 1080px ;
     margin: 0 auto;
 }
-
 /* Inicio del header */
 
 .body__header{
     height: 11vh;
     width: 100%;
     background: var(--background-white);
+    margin-top: 1rem;
 }
 
 .header__nav-ul{
@@ -88,11 +96,7 @@ a{
 
 .header__nav-ul a:hover{
     font-size: 2.3rem;
-}
-
-.here__link{
-    text-decoration: line-through;
-    text-decoration-color: var(--third);
+    color: var(--secondary);
 }
 
 .header__nav-ul li:hover span,
@@ -100,6 +104,10 @@ a{
     opacity: 1;
 }
 
+.here__link{
+    text-decoration:line-through;
+    text-decoration-color: var(--third);
+}
 /* final del header */
 
 
@@ -127,7 +135,7 @@ a{
     letter-spacing:.5em;
 }
 
-.contact__container{
+.contact__contenedor{
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -135,7 +143,7 @@ a{
 }
 
 
-.contact__container > *{
+.contact__contenedor > *{
     padding: 3.6rem;
 }
 
@@ -227,6 +235,24 @@ a{
     transform-origin: left top;
 }
 
+.block button{
+    position: relative;
+}
+
+.block button span {
+
+    opacity: 0;
+
+    padding: .8rem;
+    margin-right: 1rem;
+    position: absolute;   
+    right: 0;
+}
+
+.contact__form:hover .block button span{
+    opacity: 1;
+}
+
 /* fin del main */
 
 
@@ -251,7 +277,7 @@ header{
     }
 }
     /* caida */
-.contact__container{
+.contact__contenedor{
     animation-name: caida;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
@@ -327,13 +353,13 @@ header{
     }
     
 
-.contact__container{
+.contact__contenedor{
         display: grid;
         grid-template-columns: 1fr ;
         margin: 0 2rem;
     }
     
-.contact__container > *{
+.contact__contenedor > *{
         padding: 2rem .5rem;
     }
 
