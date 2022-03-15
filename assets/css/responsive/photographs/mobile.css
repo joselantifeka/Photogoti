@@ -23,8 +23,17 @@ html{
 .content{
     height: 60vh;
 }
+.content__text{
+    padding: 0;
+}
+.content__textleft{
+    padding: 0;
+}
 
     /* footer */
 .footer_content{
     font-size: 1.8rem;
+}
+.text{
+    font-size: 1.3rem;
 }

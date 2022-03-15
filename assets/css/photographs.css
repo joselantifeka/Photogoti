@@ -21,7 +21,7 @@
 
 /* Globals */
 html{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)),url(../image/img_index/fondo.jpg);
+    background:black;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,27 +66,47 @@ body{
 /* Helpers content */
 
 .content{
-   height: 40vh;
-
-   border-radius: 10px;
-   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.4);
+   height: 100vh;
+  
 
    justify-content: center;
    align-items : flex-end;
    
    transition: all .3s ease-in-out;
+   
+   margin: 6rem 0;
 }
 
 .content__text{
-    width: 100%;
+    width: 40%;
+    height: 100%;
 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), var(--principal);
-    filter:drop-shadow(10px);
-    border-radius: 3px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1),rgba(0, 0, 0, .9),rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6   ), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
     
 
     align-items: center;
-    padding: 0 1rem;
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content__textleft{
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(to left , rgba(0, 0, 0, 1),rgba(0, 0, 0, .9),rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6   ), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
+    
+
+    align-items: center;
+    padding: 5rem;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text{
@@ -152,60 +172,70 @@ body{
          /* primer imagen */
 
 .main__content__1{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_photographs/pexels-israel-fernandez-11166708.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/pexels-israel-fernandez-11166708.jpg);
     background-position: center;
     background-size: cover;
+
+    z-index: 999999;
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
 }
 
 
-.main__content__1:hover{
-    height: 85vh;
-    box-shadow: 0 0 20px 0 var(--third);
-}
         /* fin de la primer img */
 
         /* inicio segunda img */
 
 .main__content__2{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_photographs/1200px-Mount_Ararat_and_the_Araratian_plain_\(cropped\).jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/1200px-Mount_Ararat_and_the_Araratian_plain_\(cropped\).jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
 }
 
 
-.main__content__2:hover{
-    height: 85vh;
-    box-shadow: 0 0 20px 0 var(--third);
-}
+
     /* termina la segunda img */
 
     /* inicia la tercer img */
 
 .main__content__3{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_photographs/puente.jpeg);
+    background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/puente.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
 }
 
-.main__content__3:hover{
-    height: 85vh;
-    box-shadow: 0 0 20px 0 var(--third);
-}
+
 
     /* fin de la tecer img */
 
     /* inicio de la cuerata img */
 
 .main__content__4{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_photographs/Mount_Moses.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/Mount_Moses.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
 }
 
-.main__content__4:hover{
-    height: 85vh;
-    box-shadow: 0 0 20px 0 var(--third);
-}
 
     /* fin de la cuerata img */
 
