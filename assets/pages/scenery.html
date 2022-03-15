@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:ital,wght@1,300;1,700;1,900&display=swap" rel="stylesheet">
     <!-- RESPONSIVE -->
     <!-- <link rel="stylesheet" href="../css/responsive/contact/contact/tablet.css" media="screen and (max-width: 1079px)"> -->
-    <link rel="stylesheet" href="../css/responsive/scenary/mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="../css/responsive/scenary/mobile.css" media="screen and (max-width: 650px)">
+    <link rel="stylesheet" href="../css/responsive/scenary/tablet.css" media="screen and (max-width: 800px)">
     <!-- icono -->
     <link rel="apple-touch-icon" sizes="180x180" href="../image/img_index/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../image/img_index/favicon_io/favicon-32x32.png">
@@ -25,15 +26,15 @@
 </head>
 <body>
     <header class="body__header flex-row d-flex justify-content-center  bg-black bg-opacity-10">
-        <nav class="header__nav flex-row navbar navbar-expand-lg  ">
-            <ul class="header__nav-ul flex-row nav nav-pills">
-                <li class="nav-item"><a class="nav-link" href="../../index.html">inicio<span>click para ir!</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./photographs.html" >fotos<span>click para ir!</span></a></li>
-                <li class="nav-item"><a class="here__link nav-link" href="./scenery.html">paisajes<span>estas aqui!</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./videos.html">videos<span>click para ir!</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="./contact.html">contacto<span>click para ir!</span></a></li>
-            </ul>
-        </nav> 
+      <nav class="header__nav flex-row contenedor">
+        <ul class="header__nav-ul flex-row ">
+            <li><a href="../../index.html" class="">inicio<span>click para ir!</span></a></li>
+            <li><a href="./photographs.html" class="">fotos<span>click para ir!</span></a></li>
+            <li><a href="./scenery.html" class="here__link">paisajes<span>estas aqui!</span></a></li>
+            <li><a href="./videos.html" class="">videos<span>click para ir!</span></a></li>
+            <li><a href="./contact.html" class="">contacto<span>click para ir!</span></a></li>
+        </ul>
+      </nav>  
     </header>
     <main class="main__content">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -74,7 +75,7 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <!-- <section id="main--content">
+        <section id="main--content">
             <article class="content__first__article content flex-row">
                 <div class="content__first__article--description content__description flex-row ">
                     <p class="text">Esto es un <span style="font-weight: bold;">Aurora polar</span>, Este es el resultado de la interacción entre el viento solar y el campo magnético de la Tierra.</p>
@@ -90,7 +91,7 @@
                     <p class="text">De la Serranía de la Macarena bajan varias corrientes de agua como caño Indio, caño Yarumales, y caño Canoas, pero sólo Caño Cristales,<span style="font-weight: bold;"> el río de los cinco colores ubicado en colombia </span>, ha sido llamado 'el más hermoso del mundo'.</p>
                 </div>
             </article>
-        </section> -->
+        </section>
     </main>
     <footer class="body__footer flex-row bg-black bg-opacity-10">
         <section class="footer_content flex-row container">

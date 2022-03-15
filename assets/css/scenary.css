@@ -140,6 +140,11 @@ body{
 .main__content{
     width: auto;
     height: auto;
+
+}
+
+#main--content{
+    display: none;
 }
 
 
@@ -147,7 +152,7 @@ body{
     /* inicio de la primera seccion */
 
 .content__first__article{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/pexels-tobias-bjørkli-11180711.jpg);
     background-size: cover;
     background-position: center;
 }

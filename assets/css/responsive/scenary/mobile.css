@@ -7,18 +7,25 @@ html{
 .body__header{
     width: 100%;
     }
-
+.header__nav-ul li{
+    margin-right: 1em;
+}
 .header__nav-ul a{
     font-size: 1.4em;
-    
+    padding: 0.2em;
     }
 
 .header__nav-ul a span{
     display: none;
     }
     /* main */
+#carouselExampleCaptions{
+    display: none;
+}
 
-
+#main--content{
+    display: block;
+}
 
     /* footer */
 .footer_content{

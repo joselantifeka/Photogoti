@@ -1,0 +1,39 @@
+html{
+    background-position: center;
+    }
+    
+    /* hedear */
+
+.body__header{
+    width: 100%;
+    }
+.header__nav-ul li{
+    margin-right: 1em;
+}
+.header__nav-ul a{
+    font-size: 1.4em;
+    padding: 0.2em;
+    }
+
+.header__nav-ul a span{
+    display: none;
+    }
+    /* main */
+.content__first__article{
+    background-position:center ;
+}
+.content__second__article{
+    background-position:center ;
+}
+.content__three__article{
+    background-position:center ;
+}
+
+    /* footer */
+.footer_content{
+    font-size: 1.8rem;
+}
+
+.text{
+    font-size: 1.6rem;
+}

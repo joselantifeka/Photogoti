@@ -201,7 +201,7 @@ body{
 /* animation */
 .main__article_content_1{
     animation-name: mariposa1;
-    animation-duration: 0.5s;
+    animation-duration:0.65s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
 }
@@ -212,7 +212,7 @@ body{
         opacity: 0;
     }
     50%{
-        opacity: 0;
+        opacity: 0.3;
     }
     100%{
         transform: translateX(0);
@@ -222,7 +222,7 @@ body{
 
 .main__article__content_2{
     animation-name: mariposa2;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
 }
