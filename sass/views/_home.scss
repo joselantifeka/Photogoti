@@ -92,3 +92,82 @@
         }
     }
 }
+
+@media screen and (max-width: 799px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 87% 10%;
+
+        height: 100vh;
+
+        .main__article_content_1 {
+            width: 100vw;
+            height: 100%;
+
+            order: 1;
+
+            opacity: 0;
+
+            .content__logo {
+                height: 100%;
+            }
+        }
+
+        .main__article__content_2 {
+            width: 100vw;
+            height: 100%;
+
+            grid-template-rows: 10% 90%;
+
+            // header
+            .header__nav {
+                height: 100%;
+
+                &__ul {
+                    font-size: 1.4em;
+
+                    a {
+                        min-width: 40px;
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            // content
+            .content {
+                padding: 15% 5rem 0;
+                height: auto;
+
+                margin-top: 10rem;
+
+                &__title {
+                    font-size: 2.8rem;
+                }
+
+                &__text {
+                    font-size: 1.8em;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    body {
+        background-position: center;
+    }
+
+    .contenedor {
+        .main__article__content_2 {
+            .content {
+                padding: 15% 5rem 0;
+            }
+        }
+    }
+
+
+}
