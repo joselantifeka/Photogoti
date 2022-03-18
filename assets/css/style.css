@@ -18,7 +18,7 @@
 }
 
 /* Globals */
-html{
+body{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url(../image/img_index/fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -26,6 +26,7 @@ html{
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 62.5%;
+    line-height: inherit;
 }
 
 ul{
@@ -38,12 +39,6 @@ a{
     display: inline-block;
 }   
 
-body{
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    background-color:  inherit;
-}
 
 /* Helpers */
 .flex-grid{

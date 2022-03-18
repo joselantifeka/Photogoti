@@ -1,0 +1,94 @@
+/* inicio del main */
+.contenedor {
+    grid-template-columns: 1fr 1fr;
+
+    /* primer 50% de la pantalla */
+    /* Fondo */
+    .main__article_content_1 {
+        background: rgba(255, 255, 255, 0.5);
+        width: 50vw;
+        height: 100vh;
+
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+
+        /* logo */
+        .content__logo {
+            height: min-content;
+
+            &-img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    /* inicio del seungo 50% de la pantalla */
+    /* fondo */
+    .main__article__content_2 {
+        width: 50vw;
+        height: 100vh;
+        background: $principal;
+        grid-template-rows: 20vh 80vh;
+
+        /* header */
+        .header__nav {
+            width: 100%;
+            margin-top: 2rem;
+            justify-content: center;
+
+            &__ul {
+                justify-content: space-evenly;
+                align-items: center;
+                width: 80%;
+                font-size: 2em;
+
+                a {
+                    color: $secondary;
+                    padding: 1rem;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    transition: all .3s ease-in-out;
+                    min-width: 78px;
+                }
+
+                a:hover {
+                    font-size: 2.3rem;
+                }
+
+                li {
+                    list-style-type: none;
+
+                    span {
+                        font-size: .5em;
+                        opacity: 0;
+                    }
+                }
+
+                li:hover span {
+                    opacity: 1;
+                    color: $third;
+                }
+            }
+        }
+
+        /* content */
+        .content {
+            padding: 15% 10rem 0 10rem;
+
+            align-content: center;
+
+            &__title {
+                font-size: 4rem;
+            }
+
+            &__text {
+                font-size: 2.5em;
+            }
+        }
+    }
+}

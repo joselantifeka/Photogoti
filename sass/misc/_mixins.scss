@@ -1,0 +1,19 @@
+// mixins
+
+    /* Helpers */
+    .flex-grid{
+        display: grid;
+    }
+    .flex-row{
+        display: flex;
+    }
+    
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fontsizee{
+        font-size: 1.6rem;
+    }
+    
