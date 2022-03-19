@@ -17,3 +17,12 @@
         font-size: 1.6rem;
     }
     
+    .here{
+        text-align: center;
+    }
+
+    .here__link{
+        text-decoration:line-through;
+        text-decoration-color: $third;
+    }
+    

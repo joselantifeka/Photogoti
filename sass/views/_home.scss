@@ -106,7 +106,7 @@
 
             order: 1;
 
-            opacity: 0;
+            display: none;
 
             .content__logo {
                 height: 100%;
@@ -115,7 +115,6 @@
 
         .main__article__content_2 {
             width: 100vw;
-            height: 100%;
 
             grid-template-rows: 10% 90%;
 
@@ -170,4 +169,47 @@
     }
 
 
+}
+
+/* animation */
+.main__article_content_1{
+    animation-name: mariposa1;
+    animation-duration:0.65s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mariposa1 {
+    0%{
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main__article__content_2{
+    animation-name: mariposa2;
+    animation-duration: 0.7s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mariposa2 {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
