@@ -1,16 +1,12 @@
 /* Helpers content */
 
-body{
+body {
     background: black;
 }
 
 
 .content {
     height: 100vh;
-
-
-    justify-content: center;
-    align-items: flex-end;
 
     transition: all .3s ease-in-out;
 
@@ -24,32 +20,22 @@ body{
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
 
 
-    align-items: center;
     padding: 5rem;
 
     padding: 0.5rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center, center);
 }
 
 .content__textleft {
-    width: 40%;
-    height: 100%;
+    @extend .content__text;
 
     background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, .9), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0));
-
-
-    align-items: center;
-    padding: 5rem;
 
     position: absolute;
     right: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex(column, center, center);
 }
 
 .title-content {
@@ -60,78 +46,53 @@ body{
 
 /* inicio del main */
 
-.main__content{
+.main__content {
+    @include flex(column, none, none);
 
     // img-1
     .main__content__1 {
-        background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/pexels-israel-fernandez-11166708.jpg);
-        background-position: center;
-        background-size: cover;
-
-        border-radius: 12px;
-    
-        width: 100%;
-        height: 100%;
+        @include bg-styleb(colesioRomano);
     }
+
     // img-2
     .main__content__2 {
-        background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/MountArat.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        border-radius: 12px;
-    
-        width: 100%;
-        height: 100%;
+        @include bg-styleb(monteArat);
     }
+
     // img-3
     .main__content__3 {
-        background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/puente.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        border-radius: 12px;
-    
-        width: 100%;
-        height: 100%;
+        @include bg-styleb(frontera);
     }
+
     // img-4
     .main__content__4 {
-        background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/Mount_Moses.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        border-radius: 12px;
-    
-        width: 100%;
-        height: 100%;
+        @include bg-styleb(monteSinai);
     }
+
     // img-5
     .main__content__5 {
-        background: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/torre.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-        border-radius: 12px;
-    
-        width: 100%;
-        height: 100%;
+        @include bg-styleb(piramide);
     }
-    
+
 }
 
-@media (max-width: 800px){
-    .content{
+@media (max-width: 800px) {
+    .content {
         height: 60vh;
-    }
-    .content__text{
-        padding: 0;
-    }
-    .content__textleft{
-        padding: 0;
+
+        .content__text {
+            padding: 0;
+        }
+
+        .content__textleft {
+            padding: 0;
+        }
+
+        h2{
+            margin: 5px;
+        }
+        p{
+            margin: 5px;
+        }
     }
 }

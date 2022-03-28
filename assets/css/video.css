@@ -138,90 +138,60 @@ body {
   background: black; }
 
 .content {
-  height: 100vh;
-  transition: all .3s ease-in-out;
-  margin: 6rem 0; }
+  max-height: 650px;
+  height: 50vh;
+  border: solid 0.1px #5f5f5f;
+  border-radius: 2%;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5); }
 
-.content__text, .content__textleft {
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  padding: 5rem;
-  padding: 0.5rem;
+.content__p {
+  width: 100%;
+  height: 23%;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
-.content__textleft {
-  background: linear-gradient(to left, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+.text {
+  color: white;
+  font-size: 1.8rem;
+  padding: 0.5em; }
 
-.title-content {
-  color: #fff;
-  font-size: 1.8em;
-  font-weight: bold; }
+video {
+  width: 100%;
+  height: 80%; }
 
 /* inicio del main */
-.main__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: none;
-  align-items: none; }
-  .main__content .main__content__1 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/pexels-israel-fernandez-11166708.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__2 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/MountArat.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__3 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/puente.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__4 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/Mount_Moses.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__5 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/torre.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
+.body__main {
+  height: auto;
+  margin: 3.5rem auto; }
+  .body__main .main__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    justify-content: center;
+    height: auto;
+    margin: 1rem 1rem; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  /* main */
   .content {
-    height: 60vh; }
-    .content .content__text, .content .content__textleft {
-      padding: 0; }
-    .content .content__textleft {
-      padding: 0; }
-    .content h2 {
-      margin: 5px; }
-    .content p {
-      margin: 5px; } }
+    max-width: none;
+    height: 70vh; }
+  .content__p {
+    min-width: none;
+    width: auto;
+    height: 23%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .body__main .main__section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    font-size: 1.8rem; } }

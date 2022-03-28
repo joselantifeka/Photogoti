@@ -1,7 +1,6 @@
 /* inicio del main */
 .contenedor {
-    grid-template-columns: 1fr 1fr;
-
+    @include grid(2, 1fr, 0);
     /* primer 50% de la pantalla */
     /* Fondo */
     .main__article_content_1 {
@@ -9,8 +8,7 @@
         width: 50vw;
         height: 100vh;
 
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
 
         margin: auto;
 
@@ -30,17 +28,18 @@
         width: 50vw;
         height: 100vh;
         background: $principal;
-        grid-template-rows: 20vh 80vh;
+
+        @include grid(0,0, 2, 20vh 80vh);
+        
 
         /* header */
         .header__nav {
             width: 100%;
             margin-top: 2rem;
-            justify-content: center;
+            @include flex(row,center,center);
 
             &__ul {
-                justify-content: space-evenly;
-                align-items: center;
+                @include flex(row, space-evenly, center);
                 width: 80%;
                 font-size: 2em;
 
@@ -48,9 +47,7 @@
                     color: $secondary;
                     padding: 1rem;
 
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flex(column,flex-start,center);
 
                     transition: all .3s ease-in-out;
                     min-width: 78px;
@@ -80,14 +77,14 @@
         .content {
             padding: 15% 10rem 0 10rem;
 
-            align-content: center;
+            @include flex(column, flex-start, flex-start);
 
             &__title {
                 font-size: 4rem;
             }
 
             &__text {
-                font-size: 2.5em;
+                font-size: 2rem;
             }
         }
     }
@@ -95,8 +92,7 @@
 
 @media screen and (max-width: 799px) {
     .contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: 87% 10%;
+        @include grid(1,1fr, 2, 87% 10%);
 
         height: 100vh;
 
@@ -116,7 +112,7 @@
         .main__article__content_2 {
             width: 100vw;
 
-            grid-template-rows: 10% 90%;
+            @include grid(0,0, 2, 10% 20%);
 
             // header
             .header__nav {

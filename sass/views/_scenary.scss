@@ -1,0 +1,89 @@
+/* helpers content */
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../image/img_index/fondo.jpg);
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+
+    @include flex(row, center, flex-end);
+}
+
+.content__description {
+    width: 100%;
+
+    background: $principal;
+    box-shadow: inset 0px 4px 4px $principal;
+
+    @include flex(row, center, center);
+}
+
+.text-stroke {
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
+
+/* inicio main */
+
+.main__content {
+    width: auto;
+    height: auto;
+
+    .carousel-contenedor {
+        max-width: 1080px;
+        margin: 0 auto;
+
+        border-radius: 20%;
+    }
+}
+
+.main--content {
+    display: none;
+
+    /* inicio de la primera seccion */
+
+    .content__first__article {
+        @include paisaje-content(aura);
+    }
+
+    /* inicio de la segunda seccion */
+
+    .content__second__article {
+        @include paisaje-content(bolivia);
+    }
+
+    /* inicoi de la tercera imagen */
+
+    .content__three__article {
+        @include paisaje-content(colombia)
+    }
+}
+
+// media
+
+@media (max-width: 650px){
+     /* main */
+    #carouselExampleCaptions{
+        display: none;
+    }
+
+    .main--content{
+        display: block;
+    }
+}
+
+@media (max-width: 800px ){
+    .main__content{
+        .content__description{
+            p{
+                margin: 5px;
+            }
+        }
+        @each $number in first,second,three {
+            .content__#{$number}__article{
+                background-position: center;
+            }
+        }
+    }
+}

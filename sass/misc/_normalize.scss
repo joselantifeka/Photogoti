@@ -23,7 +23,7 @@
     }   
     
     body{
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url(../image/img_index/fondo.jpg);
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),map-get($imagenes,fondo);
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;

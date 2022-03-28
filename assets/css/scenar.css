@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -133,95 +134,70 @@ body {
   .text {
     font-size: 1.3rem; } }
 
-/* Helpers content */
+/* helpers content */
 body {
-  background: black; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../image/img_index/fondo.jpg); }
 
 .content {
+  width: 100%;
   height: 100vh;
-  transition: all .3s ease-in-out;
-  margin: 6rem 0; }
-
-.content__text, .content__textleft {
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  padding: 5rem;
-  padding: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end; }
+
+.content__description {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
-.content__textleft {
-  background: linear-gradient(to left, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+.text-stroke {
+  -webkit-text-stroke: 0.5px white; }
 
-.title-content {
-  color: #fff;
-  font-size: 1.8em;
-  font-weight: bold; }
-
-/* inicio del main */
+/* inicio main */
 .main__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: none;
-  align-items: none; }
-  .main__content .main__content__1 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/pexels-israel-fernandez-11166708.jpg);
-    background-position: center;
+  width: auto;
+  height: auto; }
+  .main__content .carousel-contenedor {
+    max-width: 1080px;
+    margin: 0 auto;
+    border-radius: 20%; }
+
+.main--content {
+  display: none;
+  /* inicio de la primera seccion */
+  /* inicio de la segunda seccion */
+  /* inicoi de la tercera imagen */ }
+  .main--content .content__first__article {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/image/img_scenary/pexels-tobias-bjørkli-11180711.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__2 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/MountArat.jpg);
-    background-position: center;
+    background-position: center; }
+  .main--content .content__second__article {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/image/img_scenary/Salar-de-Uyuni-Bolivia.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__3 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/puente.jpg);
-    background-position: center;
+    background-position: center; }
+  .main--content .content__three__article {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/image/img_scenary/Cano-Cristales-Los-Ochos-cano-cristales.com_.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__4 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/Mount_Moses.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
-  .main__content .main__content__5 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../../assets/image/img_photographs/torre.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    width: 100%;
-    height: 100%; }
+    background-position: center; }
+
+@media (max-width: 650px) {
+  /* main */
+  #carouselExampleCaptions {
+    display: none; }
+  .main--content {
+    display: block; } }
 
 @media (max-width: 800px) {
-  .content {
-    height: 60vh; }
-    .content .content__text, .content .content__textleft {
-      padding: 0; }
-    .content .content__textleft {
-      padding: 0; }
-    .content h2 {
-      margin: 5px; }
-    .content p {
-      margin: 5px; } }
+  .main__content .content__description p {
+    margin: 5px; }
+  .main__content .content__first__article {
+    background-position: center; }
+  .main__content .content__second__article {
+    background-position: center; }
+  .main__content .content__three__article {
+    background-position: center; } }
