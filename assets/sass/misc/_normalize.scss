@@ -34,6 +34,12 @@
         background-color:  inherit;
     }
 
+    .blackBody{
+        @extend body;
+
+        background: black;
+    }
+
     .text {
         color: $secondary;
         font-size: 1.6em;

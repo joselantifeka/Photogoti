@@ -1,5 +1,5 @@
 /* inicio del main */
-.contenedor {
+.contenedor__padre {
     @include grid(2, 1fr, 0);
     /* primer 50% de la pantalla */
     /* Fondo */
@@ -74,7 +74,7 @@
         }
 
         /* content */
-        .content {
+        .contentText {
             padding: 15% 10rem 0 10rem;
 
             @include flex(column, flex-start, flex-start);
@@ -91,7 +91,7 @@
 }
 
 @media screen and (max-width: 799px) {
-    .contenedor {
+    .contenedor__padre {
         @include grid(1,1fr, 2, 87% 10%);
 
         height: 100vh;
@@ -132,7 +132,7 @@
             }
 
             // content
-            .content {
+            .contentText {
                 padding: 15% 5rem 0;
                 height: auto;
 
@@ -156,9 +156,9 @@
         background-position: center;
     }
 
-    .contenedor {
+    .contenedor__padre {
         .main__article__content_2 {
-            .content {
+            .contentText {
                 padding: 15% 5rem 0;
             }
         }
