@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -321,7 +320,7 @@ body, .blackBody {
       font-size: 1.8em;
       font-weight: bold; }
   .content__main .content__main__1 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/pexels-israel-fernandez-11166708.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/coliseoRomano.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,7 +328,7 @@ body, .blackBody {
     width: 100%;
     height: 100%; }
   .content__main .content__main__2 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/MountArat.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/Mount_Ararat.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -337,7 +336,7 @@ body, .blackBody {
     width: 100%;
     height: 100%; }
   .content__main .content__main__3 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/puente.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/puente.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,7 +344,7 @@ body, .blackBody {
     width: 100%;
     height: 100%; }
   .content__main .content__main__4 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/Mount_Moses.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/Mount_Moses.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -353,7 +352,7 @@ body, .blackBody {
     width: 100%;
     height: 100%; }
   .content__main .content__main__5 {
-    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/torre.jpg);
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../image/img_photographs/torre.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -406,15 +405,15 @@ body, .blackBody {
       justify-content: center;
       align-items: center; }
   .main--content .content__first__article {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/pexels-tobias-bjørkli-11180711.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/aura.svg);
     background-size: cover;
     background-position: center; }
   .main--content .content__second__article {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/Salar-de-Uyuni-Bolivia.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/salar.svg);
     background-size: cover;
     background-position: center; }
   .main--content .content__three__article {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/Cano-Cristales-Los-Ochos-cano-cristales.com_.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/img_scenary/colombia.svg);
     background-size: cover;
     background-position: center; }
 
